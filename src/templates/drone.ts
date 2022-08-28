@@ -48,8 +48,8 @@ function shapeBuilder(data: any) {
 		//Hintergrundbild für Zielort
 		const destinationbg = SVGShape(`
 			<defs>
-				<pattern id="img1" patternUnits="userSpaceOnUse" width="309" height="200">
-					<image href="https://i.imgur.com/pbnvckp.png" x="0" y="0" width="309" height="199" />
+				<pattern id="img1" patternUnits="userSpaceOnUse" width="308" height="200">
+					<image href="https://i.imgur.com/pbnvckp.png" x="-3" y="0" width="308" height="199" />
 				</pattern>
 				<pattern id="img2" patternUnits="userSpaceOnUse" width="309" height="200">
 					<image href="https://i.imgur.com/r2ieH95.png" x="35" y="0" width="309" height="199" />

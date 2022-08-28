@@ -16,14 +16,25 @@ const graphly = ref<any>(null);
 
 const graph = ref<Graph>({ nodes: [], links: [] });
 
+enum DroneType {
+	Quadcopter = "quadcopter",
+	Plane = "plane",
+	Blimp = "blimp",
+	HoverDrone = "hoverDrone",
+}
+enum Jobs {
+	//TODO: Transport = "transport",
+	Observe = "observe",
+}
+
 const testNode: Node = {
 	id: Math.random().toString(),
 	shape: { type: "drone", scale: 1 },
 	anchor: { type: AnchorType.Soft, x: 0, y: 0 },
 	payload: {
-		droneType: "hoverDrone",
+		droneType: DroneType.Blimp,
 		color: "white",
-		job: "observe",
+		job: Jobs.Observe,
 		battery: "50",
 		warning: true,
 		warningText: "Potentieller Waldbrand",
@@ -38,8 +49,8 @@ const testNode: Node = {
 			transport: true,
 		},
 		active: {
-			camera: false,
-			transport: true,
+			camera: true,
+			transport: false,
 		},
 	},
 };
