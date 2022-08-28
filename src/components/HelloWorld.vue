@@ -21,12 +21,26 @@ const testNode: Node = {
 	shape: { type: "drone", scale: 1 },
 	anchor: { type: AnchorType.Soft, x: 0, y: 0 },
 	payload: {
-		droneType: "quadcopter",
+		droneType: "hoverDrone",
 		color: "white",
 		job: "observe",
 		battery: "50",
 		warning: true,
 		warningText: "Potentieller Waldbrand",
+		organization: "Polizei",
+		identificationNr: "1234-5678",
+		speed: "973km/h",
+		direction: "NW",
+		directionDegree: "135",
+		flightHeight: "400m",
+		equipment: {
+			camera: true,
+			transport: true,
+		},
+		active: {
+			camera: false,
+			transport: true,
+		},
 	},
 };
 
