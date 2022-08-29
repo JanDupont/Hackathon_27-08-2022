@@ -2,3 +2,5 @@
 
 -   Group results
 -   Challenge: Designing a new template (drone) for our visual vocabulary using [GraphlyD3-Vue](https://github.com/LiveReader/graphly-d3-vue).
+
+![Image Hackathon drone shape](src/assets/drone_shape.png)
